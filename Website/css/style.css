@@ -1,0 +1,374 @@
+﻿html {
+    background: url(../images/background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-width: 1300px;
+}
+
+body {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    border: #EDF5F7 solid 0px;
+}
+
+#id_header {
+    width: initial;
+    height: auto;
+}
+
+#id_eventDetails {
+    width:initial;
+    padding: 5px;
+    text-align: center;
+    height: auto;
+}
+
+#id_menu {
+    width:initial;
+    padding-top: 10px;
+}
+
+#id_eventInfo {
+    width:initial;
+    text-align: center;
+}
+
+#id_results{
+    width: 100%;
+    border: red solid 1px;
+    padding: 5px;
+    display:table;
+}
+
+#id_footer {
+    width: initial;
+    text-align: center;
+    padding: 5px;
+}
+
+#id_logoImage{
+    width: 100%;
+}
+
+#id_service{
+    position: relative;
+    top: 5px;
+}
+
+#first {
+    float: left;
+    width: 49.5%;
+    border: 1px solid red;
+}
+#second {
+    border: 1px solid green;
+    margin: 0 0 0 50.5%;
+}
+
+.inner{
+    display:table-cell;
+    background:green;
+}
+
+.c_spacer{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.stageCircle {
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding-top: 2px;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.stageSelected {
+    background: blue;
+    border: 2px solid black;
+    color: white;
+}
+
+.stageUnSelected {
+    background: yellow;
+    border: 2px solid red;
+}
+
+.id_section
+{
+    width: 100%;
+	text-align:center;
+}
+
+.c_sectionUniform{
+     display: inline-block;
+	 background:yellow;
+	 color:black;
+	 padding: 2px 6px 2px 6px;
+	 margin-right:4px;
+	 border:solid red 1px;
+	 font-weight:bold;
+}
+
+.id_sectionSelected
+ {
+	 background:yellow;
+	 color:black;
+ }
+
+.id_sectionUnSelected
+ {
+	 background: blue;
+	 color:white;
+ }
+
+.c_eventLocation{
+    font-size: 30px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.c_info{
+    font-size: 20px;
+}
+
+.c_eventLogo{
+    width: 122px;
+    height: 80px;
+}
+
+.c_floatLeft{
+    float:left;
+}
+
+.c_floatRight{
+    float:right;
+}
+
+.c_backgroundColorWhite{
+    background-color: white;
+    padding: 5px 0px 5px 0px;
+}
+
+.c_stageAlignment{
+   font-size: 18px;
+   font-weight: bold
+}
+
+.c_imageMarginTop{
+    position: relative;
+    top: 5px;
+}
+
+div.menu
+{
+    text-align:center;
+    background:white;
+    border:1px solid white;
+    font-size:0;
+    padding:1px;
+}
+
+div.menu a
+{
+    display: inline-block;
+    padding: 0 20px;
+    background:#3A332C;
+    border:1px solid #5E544A;
+    color:#C4B09C;
+    text-decoration:none;
+    font: bold 12px Arial;
+    line-height: 27px;
+    margin-right:1px;
+    width:150px;
+}
+
+div.menu a:hover, div.menu a.current
+{
+    background:#484037;
+    color:#E6D4C3;
+}
+
+#bodyMain{
+    background-color: #FFFFFF;
+    padding-bottom: 5px;
+}
+
+#wrapper{
+    border:0px solid green;
+    width:max;
+    height:auto;
+    margin:auto;
+    padding: 5px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+#bodyLeft{
+    border:0px solid blue;
+    float:left;
+    width:49%;
+    height:auto;
+    display: inline;
+}
+
+#bodyRight{
+    border:0px solid orange;
+    float:right;
+    width:49%;
+    height:auto;
+}
+.pos {
+  display: inline-block;
+  float: left;
+  height: 37px;
+  width: 5%;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 37px;
+  font-weight: bold;
+}
+.posoa {
+  display: inline-block;
+  float: left;
+  height: 37px;
+  width: 5.5%;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 37px;
+  font-weight: bold;
+}
+#icons {
+  display: inline-block;
+  float: left;
+  height: 37px;
+  width: 5%;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 37px;
+  font-weight: bold;
+}
+#diff {
+  display: block;
+  float: none;
+  height: 37px;
+  text-align: right;
+  padding-right: 3px;
+}
+#stagediff {
+    padding-top: 2px;
+    border:0px solid blue;
+    font-weight: bold;
+}
+#stagediffpr {
+    padding-top: 4px;
+    border:0px solid blue;
+}
+#flag {
+  display: inline-block;
+  float: left;
+  height: 37px;
+  width: 7%;
+}
+div#flag img{
+    display: block;
+    margin-top: 2px
+}
+div#icons img{
+    display: block;
+    margin-top: 5px
+}
+#stagetime {
+  display: inline-block;
+  float: left;
+  height: 37px;
+  width: 23%;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 37px;
+  font-weight: bold;
+}
+#divercar {
+  display: inline-block;
+  float: left;
+  height: 37px;
+  width: 47%;
+  padding-left: 3px;
+}
+#driver {
+    padding-top: 2px;
+    border:0px solid blue;
+    font-weight: bold;
+}
+#car {
+    padding-top: 4px;
+    border:0px solid blue;
+}
+.catclass {
+  display: inline-block;
+  float: left;
+  height: 37px;
+  width: 6%;
+  text-align: center;
+}
+#category{
+    padding-top: 2px;
+    border:0px solid blue;
+    font-weight: bold;
+}
+#class{
+    padding-top: 4px;
+    border:0px solid blue;
+}
+#time{
+    padding-top: 2px;
+}
+#oapenalty{
+    padding-top: 4px;
+    color: red;
+    text-align: center;
+    border: solid red 0px;
+}
+#oastagetime {
+  display: inline-block;
+  float: left;
+  height: 37px;
+  width: 17%;
+  font-weight: bold;
+  text-align: center;
+}
+
+.noresults
+{
+    text-align: center;
+    padding-top: 10px;
+    color: red;
+}
+
+.entrantStyleSuperRally{
+    color: red;
+}
+
+.entrantStyleSuperRally a:link { color: red; }
+.entrantStyleSuperRally a:visited { color: red; }
+.entrantStyleSuperRally a:hover { color: red; }
+.entrantStyleSuperRally a:active { color: red; }
+
+.entrantStyleNotSuperRally{
+    color: black;
+}
+
+.entrantStyleNotSuperRally a:link { color: black; }
+.entrantStyleNotSuperRally a:visited { color: black; }
+.entrantStyleNotSuperRally a:hover { color: black; }
+.entrantStyleNotSuperRally a:active { color: black; }
+
