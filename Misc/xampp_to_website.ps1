@@ -2,7 +2,7 @@
 #    Copy items from C:\xampp\htdocs\TimingSystem to C:\Users\soundstore1\Desktop\Rally_Timing_System
 #
 
-Write-Debug 'Beginnig Transfer......'
+Write-Host 'Beginnig Transfer......'
 
 #Files
 Copy-Item C:\xampp\htdocs\TimingSystem\connection.php C:\Users\soundstore1\Desktop\Rally_Timing_System\Website
@@ -18,10 +18,10 @@ Copy-Item C:\xampp\htdocs\TimingSystem\results.php C:\Users\soundstore1\Desktop\
 Copy-Item C:\xampp\htdocs\TimingSystem\timeanddistance.php C:\Users\soundstore1\Desktop\Rally_Timing_System\Website
 
 #Folders
-Copy-Item C:\xampp\htdocs\TimingSystem\css C:\Users\soundstore1\Desktop\Rally_Timing_System\Website -Force
-Copy-Item C:\xampp\htdocs\TimingSystem\icons C:\Users\soundstore1\Desktop\Rally_Timing_System\Website -Force
-Copy-Item C:\xampp\htdocs\TimingSystem\images C:\Users\soundstore1\Desktop\Rally_Timing_System\Website -Force
-Copy-Item C:\xampp\htdocs\TimingSystem\include C:\Users\soundstore1\Desktop\Rally_Timing_System\Website -Force
-Copy-Item C:\xampp\htdocs\TimingSystem\logos C:\Users\soundstore1\Desktop\Rally_Timing_System\Website -Force
+Copy-Item C:\xampp\htdocs\TimingSystem\css C:\Users\soundstore1\Desktop\Rally_Timing_System\Website -Force -Recurse
+Copy-Item C:\xampp\htdocs\TimingSystem\icons C:\Users\soundstore1\Desktop\Rally_Timing_System\Website -Force -Recurse
+Copy-Item C:\xampp\htdocs\TimingSystem\images C:\Users\soundstore1\Desktop\Rally_Timing_System\Website -Force -Recurse
+Copy-Item C:\xampp\htdocs\TimingSystem\include C:\Users\soundstore1\Desktop\Rally_Timing_System\Website -Force -Recurse
+Copy-Item C:\xampp\htdocs\TimingSystem\logos C:\Users\soundstore1\Desktop\Rally_Timing_System\Website -Force -Recurse
 
-Write-Debug 'Transfer Complete'
+Write-Host 'Transfer Complete'
