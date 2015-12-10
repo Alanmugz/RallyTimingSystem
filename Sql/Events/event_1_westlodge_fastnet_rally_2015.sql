@@ -115,6 +115,7 @@ INSERT INTO "Event_Category" VALUES(1,'Juniors',
 		  "(Stage 3,23.4,25 October 2015 10:19)", "(Stage 4,13.4,25 October 2015 11:19)",
 		  "(Stage 5,23.4,25 October 2015 12:19)", "(Stage 6,13.4,25 October 2015 13:19)"}',55.0, 0)
 
+
 INSERT INTO "Event_Category" VALUES(1,'Historics',
 		'{"(Stage 1,23.4,25 October 2015 08:19)", "(Stage 2,13.4,25 October 2015 09:19)",
 		  "(Stage 3,23.4,25 October 2015 10:19)", "(Stage 4,13.4,25 October 2015 11:19)",
