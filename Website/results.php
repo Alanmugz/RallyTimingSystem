@@ -44,9 +44,12 @@ foreach($stageStartTimes as $key => $stageStartTime){
     }
 }
 
-if (isset($_GET["getstage"])) {
+if (isset($_GET["getstage"])) 
+{
     $_SESSION["getstage"] = $_GET["getstage"];
-} else {
+} 
+else 
+{
     $_SESSION["getstage"] = $mostRecentStage + 1;
 }
 
@@ -274,8 +277,8 @@ foreach ($categoriesDB as $category) {
                         }
                         else 
                         {
-                          $x = $classPositions[$entrant->getClass()] ;
-                          $classPosition = $x + 1;
+                          $positionByClass = $classPositions[$entrant->getClass()] ;
+                          $classPosition = $positionByClass + 1;
                           $classPositions[$entrant->getClass()] = $classPosition ;
                         }
                     }
@@ -288,8 +291,8 @@ foreach ($categoriesDB as $category) {
                         }
                         else 
                         {
-                            $x = $classPositions[$entrant->getClass()] ;
-                            $classPosition = $x + 1;
+                            $positionByClass = $classPositions[$entrant->getClass()] ;
+                            $classPosition = $positionByClass + 1;
                             $classPositions[$entrant->getClass()] = $classPosition;
                         }
                     }
@@ -318,8 +321,8 @@ foreach ($categoriesDB as $category) {
                             if (in_array($entrant->getNumber() ,$top3Array))
                             {
                                 echo "(O/A)";
-                                $x = $classPositions[$entrant->getClass()];
-                                $classPosition = $x - 1;
+                                $positionByClass = $classPositions[$entrant->getClass()];
+                                $classPosition = $positionByClass - 1;
                                 $classPositions[$entrant->getClass()] = $classPosition;
                             }
                             else
