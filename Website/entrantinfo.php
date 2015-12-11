@@ -1,26 +1,5 @@
 <?php
 
-function setNumber($carNumber){
-    if (substr( $carNumber, 0, 1 ) === 'J') {
-        if (strlen($carNumber) == 2) {
-            $carNumber = str_replace("J", "30", $carNumber);
-        }
-        if (strlen($carNumber) == 3) {
-            $carNumber = str_replace("J", "3", $carNumber);
-        }
-    }
-    
-    if (substr( $carNumber, 0, 1 ) === 'H') {
-        if (strlen($carNumber) == 2) {
-            $carNumber = str_replace("H", "20", $carNumber);
-        }
-        if (strlen($carNumber) == 3) {
-            $carNumber = str_replace("H", "2", $carNumber);
-        }
-    }
-    return $carNumber;
-}
-
 include 'functions.php';
 
 session_start();
@@ -34,7 +13,7 @@ else
 }
 
 if (isset($_GET["carnumberleft"])) {
-    $_SESSION["carnumberleft"] = setNumber($_GET["carnumberleft"]);
+    $_SESSION["carnumberleft"] = setNumberToNumber($_GET["carnumberleft"]);
 } 
 else 
 {
@@ -42,7 +21,7 @@ else
 }
 
 if (isset($_GET["carnumberright"])) {
-    $_SESSION["carnumberright"] = setNumber($_GET["carnumberright"]);
+    $_SESSION["carnumberright"] = setNumberToNumber($_GET["carnumberright"]);
 } 
 else 
 {
@@ -95,11 +74,11 @@ $jsonEventIndividualInformationObj = json_decode($eventIndividualInformationJson
                 <div>
                     <div id="bodyLeft" style="padding-bottom: 8px;" >
                         <div style="float: right;">
-                            <INPUT TYPE = "Text" VALUE ="<?php echo setNumber($_SESSION["carnumberleft"]); ?>" NAME = "carnumberleft" size="5" style=" text-align: right;">
+                            <INPUT TYPE = "Text" VALUE ="<?php echo setNumberToLetter($_SESSION["carnumberleft"]); ?>" NAME = "carnumberleft" size="5" style=" text-align: right;">
                         </div>
                         </div>
                     <div id="bodyRight" style="padding-bottom: 8px">
-                        <INPUT TYPE = "Text" VALUE ="<?php echo setNumber($_SESSION["carnumberright"]); ?>" NAME = "carnumberright" size="5">
+                        <INPUT TYPE = "Text" VALUE ="<?php echo setNumberToLetter($_SESSION["carnumberright"]); ?>" NAME = "carnumberright" size="5">
                     </div>
                 </div>
             </form>

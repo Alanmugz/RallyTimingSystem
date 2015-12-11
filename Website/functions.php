@@ -107,4 +107,51 @@
             return $x->getPosition();
         }
     }
+    
+    function setNumberToLetter($carNumber){
+        if ($carNumber > 300) {
+            if (strpos($carNumber, '30') !== FALSE) {
+                $carNumber = str_replace("30", "J", $carNumber);
+            }
+            if ($carNumber > 309) {
+                if (strpos($carNumber, '3') !== FALSE) {
+                    $carNumber = str_replace("3", "J", $carNumber);
+                }
+            }
+        }
+
+        if ($carNumber > 200 && $carNumber < 300) {
+            if (strpos($carNumber, '20') !== FALSE) {
+                $carNumber = str_replace("20", "H", $carNumber);
+            }
+
+            if ($carNumber > 209) {
+                if (strpos($carNumber, '2') !== FALSE) {
+                    $carNumber = str_replace("2", "H", $carNumber);
+                }
+            }
+        }
+        return $carNumber;
+    }
+    
+    function setNumberToNumber($carNumber){
+        if (substr( $carNumber, 0, 1 ) === 'J') {
+            if (strlen($carNumber) == 2) {
+                $carNumber = str_replace("J", "30", $carNumber);
+            }
+            if (strlen($carNumber) == 3) {
+                $carNumber = str_replace("J", "3", $carNumber);
+            }
+        }
+
+        if (substr( $carNumber, 0, 1 ) === 'H') {
+            if (strlen($carNumber) == 2) {
+                $carNumber = str_replace("H", "20", $carNumber);
+            }
+            if (strlen($carNumber) == 3) {
+                $carNumber = str_replace("H", "2", $carNumber);
+            }
+        }
+        return $carNumber;
+    }
 ?>
