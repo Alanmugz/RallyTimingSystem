@@ -18,6 +18,7 @@ session_start();
         <a href ="results.php?getcat=Main Field&eventid=<?php echo "1"; ?>">Westlodge Hotel Fastnet Rally 2015</a><br />
         <a href ="results.php?getcat=Main Field&eventid=<?php echo "2"; ?>">Kerry Mini Stages 2015</a><br />
         <a href ="results.php?getcat=Historics&eventid=<?php echo "3"; ?>">Killarney Historics Stage Rally 2015</a><br />
+		<a href ="results.php?getcat=International&eventid=<?php echo "4"; ?>">Galway International Rally 2016</a><br />
     </div>
     
     <?php include 'include/footer.php'?>
