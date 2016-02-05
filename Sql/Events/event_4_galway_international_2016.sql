@@ -83,87 +83,91 @@ INSERT INTO "Event_Individual" VALUES (
             "class": "20"
         },
 		{
-            "type": "Historic",
+            "type": "Historics",
             "class": "B1"
         },
 		{
-            "type": "Historic",
+            "type": "Historics",
             "class": "B2"
         },	
         {
-            "type": "Historic",
+            "type": "Historics",
             "class": "B3"
         },		
 		{
-            "type": "Historic",
+            "type": "Historics",
             "class": "B4"
         },
 		{
-            "type": "Historic",
+            "type": "Historics",
             "class": "B5"
         },
 		{
-            "type": "Historic",
+            "type": "Historics",
             "class": "C1"
         },
 		{
-            "type": "Historic",
+            "type": "Historics",
             "class": "C2"
         },
 		{
-            "type": "Historic",
+            "type": "Historics",
             "class": "C3"
         },
 		{
-            "type": "Historic",
+            "type": "Historics",
             "class": "C4"
         },
 		{
-            "type": "Historic",
+            "type": "Historics",
             "class": "C5"
         },
 				{
-            "type": "Historic",
+            "type": "Historics",
             "class": "D1"
         },
 		{
-            "type": "Historic",
+            "type": "Historics",
             "class": "D2"
         },	
         {
-            "type": "Historic",
+            "type": "Historics",
             "class": "D3"
         },		
 		{
-            "type": "Historic",
+            "type": "Historics",
             "class": "D4"
         },
 		{
-            "type": "Historic",
+            "type": "Historics",
             "class": "D5"
         },
 		{
-            "type": "Historic",
+            "type": "Historics",
             "class": "E1"
         },
 		{
-            "type": "Historic",
+            "type": "Historics",
             "class": "E2"
         },
 		{
-            "type": "Historic",
+            "type": "Historics",
             "class": "E3"
         },
 		{
-            "type": "Historic",
+            "type": "Historics",
             "class": "E4"
         },
 		{
-            "type": "Junior",
+            "type": "Historics",
+            "class": "K"
+        },
+		{
+            "type": "Juniors",
             "class": "J1"
         },
 		{
-            "type": "Junior",
+            "type": "Juniors",
             "class": "J2"
         }
     ]
@@ -199,4 +203,4 @@ INSERT INTO "Event_Category" VALUES(4,'Historics',
 INSERT INTO "Event_Category" VALUES(4,'Juniors',
 		'{"(Stage 10, 19.60, 07 February 2016 08:57)", "(Stage 11, 10.00, 07 February 2016 09:44)","(Stage 12, 19.60, 07 February 2016 11:16)",
                   "(Stage 13, 10.00, 07 February 2016 12:03)", "(Stage 14, 19.60, 07 February 2016 13:35)","(Stage 15, 10.00, 07 February 2016 14:22)"}'
-		  ,88.8, 10)
+		  ,88.8, 9)
